@@ -1,3 +1,3 @@
-#Libft
+# Libft
 
 Function library in C
