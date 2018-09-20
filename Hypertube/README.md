@@ -1,5 +1,9 @@
 # Hypertube
 
+This is not the full Project as we won't give you all the answers.
+
+This project created by Lchant, Kcoetzee and Vlangman
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.8.
 
 ## Development server
