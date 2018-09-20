@@ -1,0 +1,7 @@
+create function that randmly determines the starting positon of the enemys and mountains
+	create setters for x an y in Base class
+	in Environemt create Environment::positonMountains and postionEnemy = this function take 
+Create missile functionality
+animate the movement
+start menu
+Check all classes in coplien form
