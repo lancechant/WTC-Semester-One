@@ -1,0 +1,60 @@
+<h1>
+	Register</h1>
+<p>
+	<kbd>Register</kbd> to download content!</p>
+<div class="row">
+	<div class="flex">
+		<form #f="ngForm" (ngSubmit)="onRegister(f)" class="register-form">
+			<div class="form-group">
+				<h3>Username:</h3>
+				<input type="text" class="form-control" ngModel name="username" required [pattern]="usernameInputPattern" #username="ngModel">
+				<span class="help-block" *ngIf="!username.valid && username.touched">Please enter a valid username minimum characters allowed is 6 E.G: exampl</span>
+				<!-- <span class="help-block" *ngIf="errormsg || userfound && username.touched">This username is already in use</span> -->
+				<span *ngFor="let user of usersdb | async">{{user.username}}</span>
+
+			</div>
+			<div class="form-group">
+				<h3>Email:</h3>
+				<input type="Email" id="email" class="form-control" ngModel name="email" required email #email="ngModel">
+				<span class="help-block" *ngIf="!email.valid && email.touched">Please enter a valid email for example: user@example.com</span>
+				<!-- pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" -->
+			</div>
+			<div class="form-group">
+				<h3>FirstName:</h3>
+				<input type="text" class="form-control" ngModel name="firstname" required minlength="3" #firstname="ngModel">
+				<span class="help-block" *ngIf="!firstname.valid && firstname.touched">Please enter a valid name minimum characters is length is 3</span>
+				<!-- <span class="help-block" *ngIf="errormsg || userfound && username.touched">This username is already in use</span> -->
+				<!-- <span *ngFor="let user of usersdb | async">This username @{{user.username}} is already in use.</span> -->
+			</div>
+			<div class="form-group">
+				<h3>LastName:</h3>
+				<input type="text" class="form-control" ngModel name="lastname" required minlength="3" #lastname="ngModel">
+				<span class="help-block" *ngIf="!lastname.valid && lastname.touched">Please enter a valid name minimum characters is length is 3</span>
+				<!-- <span class="help-block" *ngIf="errormsg || userfound && username.touched">This username is already in use</span> -->
+				<!-- <span *ngFor="let user of usersdb | async">This username @{{user.username}} is already in use.</span> -->
+			</div>
+			<div class="form-group">
+				<h3>Password:</h3>
+				<input type="password" class="form-control" ngModel name="password" required [pattern]="passwordPattern" validateEqual="cPassword"
+				 reverse="true" #confirmpassword="ngModel">
+				<span class="help-block" *ngIf="!confirmpassword.valid && confirmpassword.touched">Must contain at least one UpperCase letter, one LowerCase letter, one special character, a Number and longer than 8</span>
+			</div>
+			<div class="form-group">
+				<h3>Confirm password:</h3>
+				<input type="password" class="form-control" ngModel name="cPassword" required validateEqual="password" #password="ngModel">
+				<span class="help-block" *ngIf="!password.valid && password.touched">Please enter the same password</span>
+			</div>
+			<div class="alert alert-info alert-dismissible fade show">
+				<strong>Info!</strong> Please Note you can add a profile picture and change your username from the profile page!.
+			</div>
+			<div class="register-buttons form-group">
+				<button class="btn btn-outline-success api-button" type="Submit" [disabled]="!f.valid">Register</button>
+				<button class="btn btn-outline-default api-button">Cancel</button>
+			</div>
+			<div class="alert alert-danger alert-dismissible fade show" *ngIf="errormsg">
+				<button type="button" class="close" data-dismiss="alert">&times;</button>{{errormsg}}</div>
+		</form>
+
+	</div>
+
+</div>

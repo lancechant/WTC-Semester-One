@@ -1,0 +1,144 @@
+.filterDrop{
+	width: 100%;
+	background-color: rgba(58, 58, 58, 0.5);
+	text-align: center;
+	color: white;
+}
+.filterDrop:hover{
+	background-color: rgba(22, 22, 22, 0.5);
+}
+.dropdown-items{
+	display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: 400;
+    line-height: 1.42857143;
+    color: #333;
+	white-space: nowrap;
+	cursor: pointer;
+}
+.dropdown-items:hover{
+	background-color: rgba(2, 1, 1, 0.5);
+	cursor: pointer;
+}
+.mainForm{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	/*background-color: purple;*/
+	justify-content: center;
+}
+.movie-title{
+	font-size: 1.5em;
+}
+.movies-card{
+	height: fit-content;
+	width: 400px;
+	/*background-color: cornflowerblue;*/
+	/*border: 3px solid yellow;*/
+	margin: 15px;
+	position: relative;
+}
+.movies-card:hover{
+	background-color: rgba(11, 34, 71, 0.5);
+}
+.hoverblue{
+	background-color: green;
+}
+.movie-image{
+	max-width: 100%;
+	height: auto;
+}
+
+.movie-summary {
+	max-height: 250px;
+	margin-top: 5px;
+	width: 0;
+	color: white;
+	font-size: 1.2em;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	text-align: center;
+	max-height: 60%;
+}
+
+.overlay {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 2%;
+	color: white;
+	position: absolute;
+	bottom: 0;
+	background-color: rgba(0,0,0,0.9);
+	overflow: hidden;
+	width: 100%;
+	height: 10%;
+	transition: .87s ease;
+}
+.movie-footer{
+	display: flex;
+}
+.movies-card:hover .overlay{
+  height: 100%;
+  background-color: rgba(3, 18, 43, 0.8);
+}
+.summary-show{
+	display: inherit;
+	width: 90%;
+}
+.summary-hide{
+	display: none;
+	width: 0%;
+}
+.movie-genre{
+	font-size: 1em;
+}
+
+
+@media (max-width: 790px) {
+
+	.movie-summary{
+		font-size: 1.1em;
+		max-height: 60%;
+	}
+	.overlay{
+		height: 9%;
+	}
+}
+@media (max-width: 500px) {
+
+	.overlay{
+		height: 10%;
+	}
+}
+@media (max-width: 400px) {
+
+	.overlay{
+		height: 11%;
+	}
+}
+@media (max-width: 350px) {
+	.overlay{
+		height: 12%;
+	}
+	.movie-header{
+		font-size: 1.1em;
+	}	
+	.movie-summary{
+		font-size: 1em;
+		max-height: 60%;
+	}
+}
+@media (max-width: 326px) {
+	.movie-header{
+		font-size: 0.8em;
+	}
+	.movie-summary{
+		font-size: 0.7em;
+		max-height: 60%;
+	}
+}
