@@ -1,0 +1,300 @@
+body
+{
+	min-width: 1300px;
+}
+.page{
+	margin: 0 auto;
+	width: 80%;
+}
+.buttonctr 
+	{
+        width: 140px;
+        height: 90px;
+        margin: 15px;
+        display: inline-block;
+    }
+.login{
+	height: 100%;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-image: url("https://www.walldevil.com/wallpapers/a51/ocean-life-resolution-tattoo-background-quality-animals-amazing-high-definition-wallpapers.jpg");
+}
+.log_form{
+	margin: 0 auto;
+    left: 500px;
+    top: 50%;
+    position: absolute;
+}
+.signup{
+	height: 100%;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-image: url("http://reslifeprogram.unm.edu/web%20page%20background.jpg");
+}
+.signin_form{
+	margin: 0 auto;
+    left: 500px;
+    top: 50%;
+    position: absolute;
+}
+/*navigation bar*/
+.navigationbar {
+	font-size: medium;
+	font-weight: bold;
+	height: 40px;
+	background-image: url("https://i.pinimg.com/736x/0f/58/24/0f5824adfa4694abd248242c4506461f--cool-patterns-blue-patterns.jpg");
+	border-radius: 10px;
+}
+ul{
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+}
+ul li {
+	display: inline;
+	cursor:pointer;
+}
+ul li a {
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: medium;
+	text-decoration: none;
+	float: left;
+	color: white;
+	display: inline;
+	padding-top: 10px;
+	padding-right: 50px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	margin: 0px;
+	text-transform: uppercase;
+}
+ul li a:hover {
+	color: rgb(65,139,8);
+}
+
+/* Dropdown Button */
+.dropbtn {
+	background-color: transparent;
+	color: white;
+	padding: 10px;
+	font-size: medium;
+	text-decoration: none;
+	font-weight: bold;
+	border: none;
+	cursor: pointer;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	text-transform: uppercase;
+}
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: grey;
+	min-width: 160px;
+	z-index: 1;
+}
+
+.dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+.dropdown-content a:hover {
+	background-color: blue}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.dropdown:hover .dropbtn {
+	color: rgb(65,139,8);
+}
+
+.mbox
+{
+	margin: 0 auto;
+}
+.bbox{
+	height: 40%;
+	width: 100%;
+	margin-top: 5px;
+}
+.image
+{
+	width: 99.9%;
+	height: 500px;
+	border-radius: 10px;
+}
+big{
+	position: absolute; 
+   top: 200px;
+   left: 300px;
+   width: 150%;
+   font-size: 40px;
+}
+p {
+	position: absolute; 
+	top: 250px; 
+	left: 300px;
+	width: 130%; 
+	font-size: 30px;
+}
+.mini_header{
+	background-color: green;
+	padding: 2px;
+	height: 85px;
+	border-radius: 20px;
+}
+.men_clothing{
+	width: 100%;
+	height: 36%;
+	border-radius: 20px;
+}
+.women_clothing{
+	width: 100%;
+	height: 36%;
+	border-radius: 30px;
+}
+.accessories{
+	width: 100%;
+	height: 50%;
+	border-radius: 30px;
+}
+.footer{
+	background-color: green;
+	border-radius: 15px;
+	font-family: fantasy;
+	padding: 2px;
+	text-align: right;
+}
+
+/*mens clothing page*/
+.mens_tshirt{
+	background-color: brown;
+	border-radius: 10px;
+}
+.mens{
+	height: 60%;
+	width: 100%;
+	margin-top: 5px;
+}
+.item{
+	float: left; 
+	width: 100%;
+	height: 30%;
+	margin-right: 1%; 
+	border-radius: 20px;
+}
+.item2{
+	float: left; 
+	width: 100%;
+	height: 30%;
+	margin-right: 1%; 
+	border-radius: 20px;
+}
+.item3{
+	float: left; 
+	width: 100%;
+	height: 30%; 
+	margin-right: 1%; 
+	border-radius: 20px;
+}
+
+.mens_pants{
+	background-color: brown;
+	border-radius: 10px;
+}
+h1{
+	color: white;
+}
+.womens{
+	height: 60%;
+	width: 100%;
+	margin-top: 5px;
+}
+button{
+	border-radius: 15px;
+	background-color: green;
+	border-style: none;
+	padding: 10px;
+	font-weight: bold;
+	font-family: cursive;
+	text-decoration: none;
+	color: black;
+}
+ button a:link{
+	text-decoration: none;
+	font-weight: bold;
+	color: black;
+	font-size: 15px;
+}
+button a:hover{
+	text-decoration: none;
+	font-weight: bold;
+	color: blue;
+}
+td{
+	border-color: rgb(96,54,80);
+	border-style: solid;
+	border-radius: 20px;
+}
+.no_border {
+	border-style: none;
+}
+.image_server
+{
+	width: 50%;
+	height: 30%;
+	border-radius: 10px;
+}
+.navigationbar1 {
+	font-size: medium;
+	font-weight: bold;
+	height: 80px;
+	background-color: blue;
+	border-radius: 10px;
+	color: blue;
+}
+.store
+{
+	min-width: 1700px;
+}
+.store_top{
+	color: black;
+}
+#container { 
+    width: 700px; 
+    margin: 150px auto; 
+    background-color: #eee; 
+    overflow: hidden; /* Set overflow: hidden to clear the floats on #main and #sidebar */
+    padding: 15px; 
+}
+#main { 
+        width: 490px; 
+        float: left; 
+    } 
+    #main table
+    {
+        width: 480px;
+    }
+    #main table th{
+        padding: 10px;
+        background-color: #3AA0C9;
+        text-align: left;
+    }
+    #main table td
+    {
+        padding: 5px;
+    }
+  
+    #sidebar { 
+        width: 200px; 
+        float: left; 
+    }

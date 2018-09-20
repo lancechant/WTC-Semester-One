@@ -1,0 +1,130 @@
+	body{
+		background-image: url(https://i.ytimg.com/vi/xFYnRJ20gg8/maxresdefault.jpg);
+	}
+	td{
+		width: 100px;
+		height: 100px;
+		background-color: blue;
+		border-radius: 10px;
+	}
+	.element_weight{
+		text-align: right;
+	}
+	.element_number{
+		text-align: left;
+	}
+	.element_name{
+		font-weight: bold;
+		font-size: 30px;
+		text-align: center;
+	}
+	p{
+		margin: 0px;
+		width: 100%;
+	}
+	.transparent{
+		background-color: transparent;
+	}
+	.white_border{
+		border-color: white;
+		border-style: solid;
+	}
+	.transparent_semi{
+		opacity: 0.3;
+		background-color: green; 
+	}
+	.colour{
+		background-color: rgb(224, 142, 124);
+		border-color: white;
+		border-style: solid;
+	}
+	.colour1{
+		background-color: rgb(167, 202, 211);
+		border-color: white;
+		border-style: solid;
+	}
+	.colour2{
+		background-color: rgb(242, 140, 100);
+		border-color: white;
+		border-style: solid;
+	}
+	.colour3{
+		background-color: rgb(225, 206, 173);
+		border-color: white;
+		border-style: solid;
+	}
+	.colour4{
+		background-color: rgb(172, 172, 198);
+		border-color: white;
+		border-style: solid;
+	}
+	.colour5{
+		background-color: rgb(144, 173, 132);
+		border-color: white;
+		border-style: solid;
+	}
+	.colour6{
+		background-color: rgb(205, 206, 140);
+		border-color: white;
+		border-style: solid;
+	}
+	.colour7{
+		background-color: rgb(255, 228, 151);
+		border-color: white;
+		border-style: solid;
+	}
+	.colour8{
+		background-color: rgb(238, 193, 156);
+		border-color: white;
+		border-style: solid;
+	}
+	.colour9{
+		background-color: rgb(203, 156, 138);
+		border-color: white;
+		border-style: solid;
+	}
+	@media screen and (max-width: 1024px){
+		td{
+			width: 60px;
+			height: 60px;
+		}
+		.element_name{
+			font-size: 25px;
+		}
+		.element_weight{
+			font-size: 20px;
+		}
+		.element_number{
+			font-size: 20px;
+		}
+	}
+	@media screen and (max-width: 800px){
+		td{
+			width: 40px;
+			height: 40px;
+		}
+		.element_name{
+			font-size: 20px;
+		}
+		.element_weight{
+			font-size: 15px;
+		}
+		.element_number{
+			font-size: 15px;
+		}
+	}
+	@media screen and (max-width: 500px){
+		td{
+			width: 20px;
+			height: 20px;
+		}
+		.element_name{
+			font-size: 13px;
+		}
+		.element_weight{
+			font-size: 10px;
+		}
+		.element_number{
+			font-size: 10px;
+		}
+	}
