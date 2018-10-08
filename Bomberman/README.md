@@ -1,3 +1,5 @@
 # Bomberman
 
-This project is replicating the game called Bomberman using modern OpenGl
+Bomberman RecreaNon of the Bomberman game
+
+using C++ and OpenGL
